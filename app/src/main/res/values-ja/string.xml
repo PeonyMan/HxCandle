@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CandleLight</string>
+    <string name="please_open_ble">まずブルートゥースを開けてください</string>
+    <string name="search_device">検索デバイス</string>
+    <string name="my_device">私の設備</string>
+    <string name="no_device">デバイスを追加するにはクリックしてください</string>
+    <string name="dialog_tips">暖かいヒント</string>
+    <string name="delete_or_not">このデバイスを削除しますか</string>
+    <string name="yes">はい</string>
+    <string name="no">キャンセル</string>
+    <string name="con_failure">接続に失敗しました</string>
+    <string name="con_dis">ブルートゥースは切断されました</string>
+    <string name="rename">名前を変更</string>
+    <string name="timer_open">定時に開く</string>
+    <string name="turn_on">開く</string>
+    <string name="turn_off">閉じる</string>
+    <string name="open_mode">コイルが</string>
+    <string name="shutdown_mode">コイルオフ</string>
+    <string name="timer">時間を決める</string>
+    <string name="brightness_text">明るさ:</string>
+</resources>

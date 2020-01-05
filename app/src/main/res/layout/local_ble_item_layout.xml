@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mosl.module.widget.SquareLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/local_ble_layout"
+    android:background="@drawable/ble_list_item_selecter"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <com.mosl.module.widget.SquareImageView
+        android:id="@+id/local_ble_image"
+        android:src="@mipmap/light_item_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/local_ble_name"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.mosl.module.widget.SquareLinearLayout>

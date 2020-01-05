@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.CtrlDeviceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.mosl.module.widget.SquareImageView
+            android:id="@+id/light_bg_image"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lightness_value"
+                android:textSize="17sp"
+                android:text="0"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <com.mosl.module.widget.VerticalSeekBar
+                android:id="@+id/lightness_seekbar"
+                android:max="49"
+                android:minHeight="10dp"
+                android:maxHeight="10dp"
+                android:thumb="@drawable/seekbar_thumb_select_shape"
+                android:progressDrawable="@drawable/seekbar_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp">
+            </com.mosl.module.widget.VerticalSeekBar>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reduce_btn"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/reduce_btn_selector"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </ImageView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/level_one"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/color_cccccc"
+                android:layout_width="5dp"
+                android:layout_height="10dp">
+            </View>
+
+            <View
+                android:id="@+id/level_two"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/color_cccccc"
+                android:layout_width="5dp"
+                android:layout_height="13dp">
+            </View>
+
+            <View
+                android:id="@+id/level_three"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/color_cccccc"
+                android:layout_width="5dp"
+                android:layout_height="16dp">
+            </View>
+
+            <View
+                android:id="@+id/level_four"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/color_cccccc"
+                android:layout_width="5dp"
+                android:layout_height="19dp">
+            </View>
+
+            <View
+                android:id="@+id/level_five"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/color_cccccc"
+                android:layout_width="5dp"
+                android:layout_height="24dp">
+            </View>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/add_btn"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/add_btn_selector"
+            android:padding="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/color_f3f3f3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/btn_left_frame_layer"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/timer"
+                android:src="@mipmap/timer_normal_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/btn_left_frame_layer"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/power"
+                android:src="@mipmap/power_switch_normal"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/btn_frame_layer"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coil_power"
+                android:src="@mipmap/coil_switch_normal"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

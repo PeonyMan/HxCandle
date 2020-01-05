@@ -1,0 +1,2 @@
+include ':app', ':Mosl_Module_BleDevice', ':Mosl_Module_Util', ':Mosl_Module_Widget'
+rootProject.name='HxCandle'

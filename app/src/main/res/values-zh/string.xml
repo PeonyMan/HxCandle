@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CandleLight</string>
+    <string name="please_open_ble">请先打开蓝牙</string>
+    <string name="search_device">搜索设备</string>
+    <string name="my_device">我的设备</string>
+    <string name="no_device">点我添加设备</string>
+    <string name="dialog_tips">温馨提示</string>
+    <string name="delete_or_not">是否删除此设备</string>
+    <string name="yes">确定</string>
+    <string name="no">取消</string>
+    <string name="con_failure">连接失败</string>
+    <string name="con_dis">蓝牙已经断开连接</string>
+    <string name="rename">重命名</string>
+    <string name="timer_open">定时开</string>
+    <string name="turn_on">打开</string>
+    <string name="turn_off">关闭</string>
+    <string name="open_mode">线圈开</string>
+    <string name="shutdown_mode">线圈关</string>
+    <string name="timer">定时</string>
+    <string name="brightness_text">亮度:</string>
+</resources>

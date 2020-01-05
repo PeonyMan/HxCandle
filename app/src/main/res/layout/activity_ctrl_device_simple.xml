@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".page.CtrlDeviceSimpleActivity">
+
+    <com.mosl.module.widget.SquareImageView
+        android:id="@+id/light_bg_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/power_layout"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/power_turn_on_layout"
+            android:background="@drawable/btn_topright_frame_layer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/power_turn_on"
+                android:background="@drawable/power_open_selector"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+            </ImageView>
+
+            <TextView
+                android:text="@string/turn_on"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/power_turn_off_layout"
+            android:background="@drawable/btn_top_frame_layer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/power_turn_off"
+                android:background="@drawable/power_close_selector"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+            </ImageView>
+
+            <TextView
+                android:text="@string/turn_off"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mode_layout"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:layout_above="@id/power_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/timer_layout"
+            android:background="@drawable/btn_left_frame_layer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/timer"
+                android:background="@drawable/timer_selector"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+            </ImageView>
+
+            <TextView
+                android:text="@string/timer"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mode_turn_on_layout"
+            android:background="@drawable/btn_left_frame_layer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mode_turn_on"
+                android:background="@drawable/mode_open_selector"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+            </ImageView>
+
+            <TextView
+                android:text="@string/open_mode"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mode_turn_off_layout"
+            android:background="@drawable/btn_frame_layer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/mode_turn_off"
+                android:background="@drawable/mode_close_selector"
+                android:layout_width="35dp"
+                android:layout_height="35dp">
+            </ImageView>
+
+            <TextView
+                android:text="@string/shutdown_mode"
+                android:textColor="@color/text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_above="@id/mode_layout"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lightness_value"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/lightness_bar_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <SeekBar
+                android:id="@+id/lightness_seekbar"
+                android:max="49"
+                android:minHeight="10dp"
+                android:maxHeight="10dp"
+                android:thumb="@drawable/seekbar_thumb_select_shape"
+                android:progressDrawable="@drawable/seekbar_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

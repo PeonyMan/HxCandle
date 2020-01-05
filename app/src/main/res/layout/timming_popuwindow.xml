@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="15dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/timing_popuwindow_shape"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/purifier_timing_cancel"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/center_tips"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/text_color"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/purifier_timing_confirm"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="15dp"
+            android:textColor="@color/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.wx.wheelview.widget.WheelView
+            android:id="@+id/purifier_timing_wheel"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content" />
+
+        <!--<TextView-->
+            <!--android:textColor="@color/colorText2d2d2d"-->
+            <!--android:textSize="15dp"-->
+            <!--android:text="小时"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    </LinearLayout>
+
+</LinearLayout>
